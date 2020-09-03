@@ -1,0 +1,130 @@
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo {
+    height: 160px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.head {
+    color: white;
+    font-size: 1.2em;
+    background: rgb(159, 202, 163);
+    padding-top: 30px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head1,
+.head2 {
+    display: inline-block;
+}
+
+.head-text1 {
+    background: rgb(5, 87, 13);
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.head-text {
+    width: 1200px;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head-photo {
+    position: absolute;
+}
+
+.icone {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.other-profile {
+    background: rgb(159, 202, 163);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.other-profile1 {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(159, 202, 163);
+    padding-bottom: 30px;
+}
+
+.body-content1 {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+.works,
+.educations,
+.skills {
+    width: 32%;
+    padding: 10px;
+}
+
+.educations {
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+}
+
+@media all and (max-width: 725px) {
+    .head {
+        height: 250px;
+        padding-top: 0px;
+    }
+    .head-text1 {
+        height: 250px;
+    }
+    .head-text {
+        flex-direction: column;
+        text-align: center;
+    }
+    .photo {
+        height: 120px;
+    }
+    .body-content1 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .works,
+    .educations,
+    .skills {
+        width: 96.5%;
+    }
+    .educations {
+        border-top: 5px solid white;
+        border-bottom: 5px solid white;
+        border-left: none;
+        border-right: none;
+    }
+}
